@@ -1,0 +1,7 @@
+.social__item a:hover {
+    color: red;
+}
+
+.social__item a:active {
+    color: purple;
+}
