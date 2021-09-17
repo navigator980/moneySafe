@@ -4,6 +4,21 @@ import Social from "../Social/Social";
 
 import "./header.css";
 
+const headerMenuItems = [
+  {
+    href: "App.js",
+    text: "Главная",
+  },
+  {
+    href: "App.js",
+    text: "Статьи",
+  },
+  {
+    href: "App.js",
+    text: "Карта сайта",
+  },
+];
+
 const Header = () => {
   return (
     <header className="header">
@@ -11,21 +26,11 @@ const Header = () => {
         <img src="http://placehold.it/120x60" alt="placehold" />
       </a>
       <ul className="header__menu">
-        <li className="header__item">
-          <span>
-            <a href="index.js">Главная</a>
-          </span>
-        </li>
-        <li className="header__item">
-          <span>
-            <a href="index.js">Статьи</a>
-          </span>
-        </li>
-        <li className="header__item">
-          <span>
-            <a href="index.js">Карта сайта</a>
-          </span>
-        </li>
+        {headerMenuItems.map((el) => (
+          <li key={el.text} className="header__item">
+            <a href={el.href}>{el.text}</a>
+          </li>
+        ))}
       </ul>
       <Social />
     </header>

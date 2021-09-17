@@ -15,7 +15,7 @@ const fastLinks = [
   },
   {
     href: "App.js",
-    text: "sdsdsdsdsd",
+    text: "Новости",
   },
 ];
 
