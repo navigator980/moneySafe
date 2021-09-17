@@ -1,6 +1,23 @@
 import React from "react";
-import "./footer.css";
+
 import Social from "../Social/Social";
+
+import "./footer.css";
+
+const fastLinks = [
+  {
+    href: "App.js",
+    text: "О сайте",
+  },
+  {
+    href: "App.js",
+    text: "Лайфхаки",
+  },
+  {
+    href: "App.js",
+    text: "sdsdsdsdsd",
+  },
+];
 
 const Footer = () => {
   return (
@@ -14,18 +31,11 @@ const Footer = () => {
           </span>
         </span>
         <ul className="footer__about">
-          <li>
-            <a href="App.js">О сайте</a>
-          </li>
-          <li>
-            <a href="App.js">Лайфхаки</a>
-          </li>
-          <li>
-            <a href="App.js">Обратная связь</a>
-          </li>
-          <li>
-            <a href="App.js">Статьи</a>
-          </li>
+          {fastLinks.map((el) => (
+            <li key={el.text} className="footer__aboutItem">
+              <a href={el.href}>{el.text}</a>
+            </li>
+          ))}
         </ul>
         <Social />
       </div>
