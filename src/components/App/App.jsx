@@ -1,7 +1,7 @@
+import React from "react";
 import Footer from "../Footer/Footer";
 import Header from "../Header/Header";
-
-import './app.css';
+import "./app.css";
 
 const App = () => {
   return (
@@ -10,6 +10,6 @@ const App = () => {
       <Footer />
     </div>
   );
-}
+};
 
 export default App;
