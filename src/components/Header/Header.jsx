@@ -1,6 +1,8 @@
 import React from "react";
-import "./header.css";
+
 import Social from "../Social/Social";
+
+import "./header.css";
 
 const Header = () => {
   return (
