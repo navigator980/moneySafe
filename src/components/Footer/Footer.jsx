@@ -4,7 +4,7 @@ import Social from "../Social/Social";
 
 import "./footer.css";
 
-const fastLinks = [
+const footerMenuLinks = [
   {
     href: "App.js",
     text: "О сайте",
@@ -15,7 +15,7 @@ const fastLinks = [
   },
   {
     href: "App.js",
-    text: "sdsdsdsdsd",
+    text: "Новости",
   },
 ];
 
@@ -31,7 +31,7 @@ const Footer = () => {
           </span>
         </span>
         <ul className="footer__about">
-          {fastLinks.map((el) => (
+          {footerMenuLinks.map((el) => (
             <li key={el.text} className="footer__aboutItem">
               <a href={el.href}>{el.text}</a>
             </li>

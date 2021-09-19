@@ -1,0 +1,11 @@
+.content__items {
+    display: flex;
+    margin: 0 auto;
+    padding: 25px 20px;
+    width: 1500px;
+    justify-content: space-between;
+}
+
+.content__item li {
+    text-align: center;
+}
