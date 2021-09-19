@@ -22,7 +22,7 @@ const contentBlockItem = [
 
 const Content = () => {
   return (
-    <div className="content__block">
+    <div className="content">
       <ul className="content__items">
         {contentBlockItem.map((el) => (
           <li key={el.text} className="content__item">
