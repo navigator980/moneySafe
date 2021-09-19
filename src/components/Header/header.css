@@ -2,13 +2,52 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: black;
 }
 
 .header__menu {
     display: flex;
 }
 
+.header__menu li {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    padding: 20px 20px;
+    margin-right: 10px;
+    background: #363636;
+    text-decoration: none;
+    letter-spacing: 1px;
+    overflow: hidden;
+}
+
+.header__item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, 50%);
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: #2196f3;
+    transition: width 0.5s, height 0.5s;
+}
+
 .header__menu a {
-    margin-right: 15px;
+    position: relative;
+    z-index: 1;
+}
+
+.header__item:hover::before {
+    width: 100px;
+    height: 100px;
+}
+
+@import url('https://googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+.header__menu a {
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: 'Poppins', sans-serif;
 }

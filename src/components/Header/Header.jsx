@@ -4,7 +4,7 @@ import Social from "../Social/Social";
 
 import "./header.css";
 
-const headerMenuItems = [
+const headerMenuLinks = [
   {
     href: "App.js",
     text: "Главная",
@@ -26,7 +26,7 @@ const Header = () => {
         <img src="http://placehold.it/120x60" alt="placehold" />
       </a>
       <ul className="header__menu">
-        {headerMenuItems.map((el) => (
+        {headerMenuLinks.map((el) => (
           <li key={el.text} className="header__item">
             <a href={el.href}>{el.text}</a>
           </li>
